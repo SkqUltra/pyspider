@@ -10,7 +10,7 @@ saveurl = "/baidu-erlang.txt"
 
 class Spider:
 
-	def __init__(self, url):
+	def __init__(self):
 		self.url = url
 		self.saveurl = saveurl
 		self.data = []
@@ -32,6 +32,6 @@ class Spider:
 		f.close()  
 
 
-sp = Spider(url)
+sp = Spider()
 sp.spider()
 sp.save()
